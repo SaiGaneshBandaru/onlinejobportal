@@ -1,0 +1,121 @@
+/* Container for the Apply Now page */
+.applyNowContainer {
+  width: 60vw;
+  max-width: 100vh;
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  height: auto; /* Ensure height adjusts automatically */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 0px; /* Increased margin to allow space for the form */
+  font-size: 24px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Adds spacing between form elements */
+}
+
+/* General form group styles */
+.formGroup {
+  justify-content: flex-start; 
+  margin-bottom: 3px;
+}
+
+.formGroup label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0px;
+  display: block;
+  font-size: 14px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Styling for the textarea */
+.formGroup textarea {
+  resize: vertical;
+  min-height: 10px; /* Increased minimum height for better visibility */
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Checkbox styles */
+.formGroup input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.formGroup label[for="terms"] {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .applyNowContainer {
+    width: 90%;
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .applyNowContainer {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  .formGroup label {
+    font-size: 14px;
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    font-size: 12px;
+  }
+}

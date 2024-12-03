@@ -1,0 +1,122 @@
+/* Components/registration/Registration.module.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d8bfd8, #e6e6fa); /* Soft purple gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333333;
+}
+
+/* Registration Page */
+.registrationPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Registration Container */
+.registrationContainer {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  text-align: center;
+}
+
+.registrationTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4a148c;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.registrationForm .formGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 14px;
+  color: #4a148c;
+  margin-bottom: 8px;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background: #f3e5f5;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formGroup input:focus {
+  border-color: #ba68c8;
+  box-shadow: 0 0 8px rgba(186, 104, 200, 0.3);
+}
+
+/* Submit Button */
+.registerButton {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(90deg, #ba68c8, #8e24aa);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.registerButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(186, 104, 200, 0.4);
+}
+
+/* Error & Success Messages */
+.errorMessage, .successMessage {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.errorMessage {
+  color: #dc3545;
+}
+
+.successMessage {
+  color: #28a745;
+}
+
+/* Login Link */
+.loginOption {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loginLink {
+  color: #8e24aa;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .registrationContainer {
+    width: 90%;
+    padding: 30px;
+  }
+}

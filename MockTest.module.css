@@ -1,0 +1,137 @@
+.mockTestContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #f1f5f9);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.questionBox {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 25px;
+}
+
+.questionNumber {
+  font-size: 22px;
+  color: #2980b9;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background: #ecf0f1;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #2c3e50;
+  text-align: center;
+}
+
+button:hover {
+  background: #d1d8e0;
+  transform: scale(1.02);
+}
+
+button:disabled {
+  background: #bdc3c7;
+  color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+.selected {
+  background: #27ae60;
+  color: white;
+  border: 2px solid #229954;
+}
+
+.nextButton {
+  background: #3498db;
+  color: white;
+}
+
+.nextButton:hover {
+  background: #2980b9;
+  transform: scale(1.03);
+}
+
+.submitButton {
+  background: #e74c3c;
+  color: white;
+  font-size: 18px;
+  padding: 14px 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+.submitButton:disabled {
+  background: #e57373;
+  cursor: not-allowed;
+}
+
+.result {
+  text-align: center;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.result h2 {
+  color: #34495e;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.resetButton {
+  padding: 15px 35px;
+  font-size: 16px;
+  background: #f39c12;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.resetButton:hover {
+  background: #e67e22;
+  transform: scale(1.05);
+}

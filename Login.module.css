@@ -1,0 +1,85 @@
+/* Login Page Styling */
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #004aad, #007bff);
+}
+
+.loginCard {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.loginCard h2 {
+  margin-bottom: 20px;
+  color: #004aad;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.formGroup input:focus {
+  border-color: #004aad;
+  outline: none;
+}
+
+.loginButton {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #00357a;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.signupPrompt {
+  margin-top: 15px;
+  color: #555;
+}
+
+.signupPrompt a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signupPrompt a:hover {
+  text-decoration: underline;
+}
